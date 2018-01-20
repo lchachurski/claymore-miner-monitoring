@@ -1,0 +1,1256 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "fe9d519f6dfdaa316d0e39f70d7ac567",
+    "packages": [
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-06-22T18:50:49+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20T10:07:11+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "hoa/consistency",
+            "version": "1.17.05.02",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoaproject/Consistency.git",
+                "reference": "fd7d0adc82410507f332516faf655b6ed22e4c2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoaproject/Consistency/zipball/fd7d0adc82410507f332516faf655b6ed22e4c2f",
+                "reference": "fd7d0adc82410507f332516faf655b6ed22e4c2f",
+                "shasum": ""
+            },
+            "require": {
+                "hoa/exception": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "hoa/stream": "~1.0",
+                "hoa/test": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoa\\Consistency\\": "."
+                },
+                "files": [
+                    "Prelude.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Enderlin",
+                    "email": "ivan.enderlin@hoa-project.net"
+                },
+                {
+                    "name": "Hoa community",
+                    "homepage": "https://hoa-project.net/"
+                }
+            ],
+            "description": "The Hoa\\Consistency library.",
+            "homepage": "https://hoa-project.net/",
+            "keywords": [
+                "autoloader",
+                "callable",
+                "consistency",
+                "entity",
+                "flex",
+                "keyword",
+                "library"
+            ],
+            "time": "2017-05-02T12:18:12+00:00"
+        },
+        {
+            "name": "hoa/event",
+            "version": "1.17.01.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoaproject/Event.git",
+                "reference": "6c0060dced212ffa3af0e34bb46624f990b29c54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoaproject/Event/zipball/6c0060dced212ffa3af0e34bb46624f990b29c54",
+                "reference": "6c0060dced212ffa3af0e34bb46624f990b29c54",
+                "shasum": ""
+            },
+            "require": {
+                "hoa/consistency": "~1.0",
+                "hoa/exception": "~1.0"
+            },
+            "require-dev": {
+                "hoa/test": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoa\\Event\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Enderlin",
+                    "email": "ivan.enderlin@hoa-project.net"
+                },
+                {
+                    "name": "Hoa community",
+                    "homepage": "https://hoa-project.net/"
+                }
+            ],
+            "description": "The Hoa\\Event library.",
+            "homepage": "https://hoa-project.net/",
+            "keywords": [
+                "event",
+                "library",
+                "listener",
+                "observer"
+            ],
+            "time": "2017-01-13T15:30:50+00:00"
+        },
+        {
+            "name": "hoa/exception",
+            "version": "1.17.01.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoaproject/Exception.git",
+                "reference": "091727d46420a3d7468ef0595651488bfc3a458f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoaproject/Exception/zipball/091727d46420a3d7468ef0595651488bfc3a458f",
+                "reference": "091727d46420a3d7468ef0595651488bfc3a458f",
+                "shasum": ""
+            },
+            "require": {
+                "hoa/consistency": "~1.0",
+                "hoa/event": "~1.0"
+            },
+            "require-dev": {
+                "hoa/test": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoa\\Exception\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Enderlin",
+                    "email": "ivan.enderlin@hoa-project.net"
+                },
+                {
+                    "name": "Hoa community",
+                    "homepage": "https://hoa-project.net/"
+                }
+            ],
+            "description": "The Hoa\\Exception library.",
+            "homepage": "https://hoa-project.net/",
+            "keywords": [
+                "exception",
+                "library"
+            ],
+            "time": "2017-01-16T07:53:27+00:00"
+        },
+        {
+            "name": "hoa/protocol",
+            "version": "1.17.01.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoaproject/Protocol.git",
+                "reference": "5c2cf972151c45f373230da170ea015deecf19e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoaproject/Protocol/zipball/5c2cf972151c45f373230da170ea015deecf19e2",
+                "reference": "5c2cf972151c45f373230da170ea015deecf19e2",
+                "shasum": ""
+            },
+            "require": {
+                "hoa/consistency": "~1.0",
+                "hoa/exception": "~1.0"
+            },
+            "require-dev": {
+                "hoa/test": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoa\\Protocol\\": "."
+                },
+                "files": [
+                    "Wrapper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Enderlin",
+                    "email": "ivan.enderlin@hoa-project.net"
+                },
+                {
+                    "name": "Hoa community",
+                    "homepage": "https://hoa-project.net/"
+                }
+            ],
+            "description": "The Hoa\\Protocol library.",
+            "homepage": "https://hoa-project.net/",
+            "keywords": [
+                "library",
+                "protocol",
+                "resource",
+                "stream",
+                "wrapper"
+            ],
+            "time": "2017-01-14T12:26:10+00:00"
+        },
+        {
+            "name": "hoa/socket",
+            "version": "1.17.05.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoaproject/Socket.git",
+                "reference": "1a43f073d910d0f803de8cc9256779db1027906d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoaproject/Socket/zipball/1a43f073d910d0f803de8cc9256779db1027906d",
+                "reference": "1a43f073d910d0f803de8cc9256779db1027906d",
+                "shasum": ""
+            },
+            "require": {
+                "hoa/consistency": "~1.0",
+                "hoa/exception": "~1.0",
+                "hoa/stream": "~1.0"
+            },
+            "require-dev": {
+                "hoa/test": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoa\\Socket\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Enderlin",
+                    "email": "ivan.enderlin@hoa-project.net"
+                },
+                {
+                    "name": "Hoa community",
+                    "homepage": "https://hoa-project.net/"
+                }
+            ],
+            "description": "The Hoa\\Socket library.",
+            "homepage": "https://hoa-project.net/",
+            "keywords": [
+                "Socket",
+                "client",
+                "library",
+                "node",
+                "server",
+                "tcp",
+                "udp"
+            ],
+            "time": "2017-05-16T07:55:41+00:00"
+        },
+        {
+            "name": "hoa/stream",
+            "version": "1.17.02.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoaproject/Stream.git",
+                "reference": "3293cfffca2de10525df51436adf88a559151d82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoaproject/Stream/zipball/3293cfffca2de10525df51436adf88a559151d82",
+                "reference": "3293cfffca2de10525df51436adf88a559151d82",
+                "shasum": ""
+            },
+            "require": {
+                "hoa/consistency": "~1.0",
+                "hoa/event": "~1.0",
+                "hoa/exception": "~1.0",
+                "hoa/protocol": "~1.0"
+            },
+            "require-dev": {
+                "hoa/test": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hoa\\Stream\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Enderlin",
+                    "email": "ivan.enderlin@hoa-project.net"
+                },
+                {
+                    "name": "Hoa community",
+                    "homepage": "https://hoa-project.net/"
+                }
+            ],
+            "description": "The Hoa\\Stream library.",
+            "homepage": "https://hoa-project.net/",
+            "keywords": [
+                "Context",
+                "bucket",
+                "composite",
+                "filter",
+                "in",
+                "library",
+                "out",
+                "protocol",
+                "stream",
+                "wrapper"
+            ],
+            "time": "2017-02-21T16:01:06+00:00"
+        },
+        {
+            "name": "influxdb/influxdb-php",
+            "version": "1.14.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/influxdata/influxdb-php.git",
+                "reference": "64c79de3f3e0e7f8c20b5fc51f50da8736767de9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/influxdata/influxdb-php/zipball/64c79de3f3e0e7f8c20b5fc51f50da8736767de9",
+                "reference": "64c79de3f3e0e7f8c20b5fc51f50da8736767de9",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "php": "^5.5 || ^7.0",
+                "symfony/event-dispatcher": "^2.0 || ^3.0 || ^4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.*",
+                "symfony/config": "~2.8|~3.0|~4.0",
+                "symfony/console": "~2.8|~3.0|~4.0",
+                "symfony/filesystem": "~2.8|~3.0|~4.0",
+                "symfony/phpunit-bridge": "^3.4 || ^4.0",
+                "symfony/stopwatch": "~2.8|~3.0|~4.0",
+                "symfony/yaml": "~2.8|~3.0|~4.0"
+            },
+            "suggest": {
+                "stefanotorresi/influxdb-php-async": "An asyncronous client for InfluxDB, implemented via ReactPHP."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "InfluxDB\\": "src/InfluxDB"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gianluca Arbezzano",
+                    "email": "gianarb92@gmail.com"
+                },
+                {
+                    "name": "Daniel Martinez",
+                    "email": "danimartcas@hotmail.com"
+                },
+                {
+                    "name": "Stephen Hoogendijk",
+                    "email": "stephen@tca0.nl"
+                }
+            ],
+            "description": "InfluxDB client library for PHP",
+            "keywords": [
+                "client",
+                "influxdata",
+                "influxdb",
+                "influxdb class",
+                "influxdb client",
+                "influxdb library",
+                "time series"
+            ],
+            "time": "2018-01-03T13:09:43+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "ramsey/array_column",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/array_column.git",
+                "reference": "f8e52eb28e67eb50e613b451dd916abcf783c1db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/array_column/zipball/f8e52eb28e67eb50e613b451dd916abcf783c1db",
+                "reference": "f8e52eb28e67eb50e613b451dd916abcf783c1db",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "0.8.*",
+                "phpunit/phpunit": "~4.5",
+                "satooshi/php-coveralls": "0.6.*",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/array_column.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "homepage": "http://benramsey.com"
+                }
+            ],
+            "description": "Provides functionality for array_column() to projects using PHP earlier than version 5.5.",
+            "homepage": "https://github.com/ramsey/array_column",
+            "keywords": [
+                "array",
+                "array_column",
+                "column"
+            ],
+            "time": "2015-03-20T22:07:39+00:00"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "74d33aac36208c4d6757807d9f598f0133a3a4eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/74d33aac36208c4d6757807d9f598f0133a3a4eb",
+                "reference": "74d33aac36208c4d6757807d9f598f0133a3a4eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.4"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/expression-language": "~3.4|~4.0",
+                "symfony/stopwatch": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-01-03T07:38:00+00:00"
+        },
+        {
+            "name": "symfony/polyfill-iconv",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-iconv.git",
+                "reference": "7a84ccdb8c953ee274c96dd6bde778d873fc824a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/7a84ccdb8c953ee274c96dd6bde778d873fc824a",
+                "reference": "7a84ccdb8c953ee274c96dd6bde778d873fc824a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-iconv": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Iconv extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "iconv",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-10-11T12:05:26+00:00"
+        },
+        {
+            "name": "symfony/polyfill-intl-grapheme",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
+                "reference": "56f9af33902ea40dce76bb52870ea93d192dfcf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/56f9af33902ea40dce76bb52870ea93d192dfcf3",
+                "reference": "56f9af33902ea40dce76bb52870ea93d192dfcf3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Grapheme\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's grapheme_* functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "grapheme",
+                "intl",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-10-11T12:05:26+00:00"
+        },
+        {
+            "name": "symfony/polyfill-intl-normalizer",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
+                "reference": "9969b51578b6dbe4bf8aeef7f3cbefadef77752f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/9969b51578b6dbe4bf8aeef7f3cbefadef77752f",
+                "reference": "9969b51578b6dbe4bf8aeef7f3cbefadef77752f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's Normalizer class and related functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "intl",
+                "normalizer",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-10-11T12:05:26+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-10-11T12:05:26+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "6de4f4884b97abbbed9f0a84a95ff2ff77254254"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/6de4f4884b97abbbed9f0a84a95ff2ff77254254",
+                "reference": "6de4f4884b97abbbed9f0a84a95ff2ff77254254",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-10-11T12:05:26+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "voku/arrayy",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/Arrayy.git",
+                "reference": "58542c409912eb564b6a7e96430e70c22fcdb78e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/58542c409912eb564b6a7e96430e70c22fcdb78e",
+                "reference": "58542c409912eb564b6a7e96430e70c22fcdb78e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "ramsey/array_column": "~1.1",
+                "voku/portable-utf8": "~5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Arrayy\\": "src/"
+                },
+                "files": [
+                    "src/Create.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "email": "lars@moelleken.org",
+                    "homepage": "http://www.moelleken.org/",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Array manipulation library for PHP, called Arrayy!",
+            "keywords": [
+                "Arrayy",
+                "array",
+                "helpers",
+                "manipulation",
+                "methods",
+                "utility",
+                "utils"
+            ],
+            "time": "2017-12-23T02:19:43+00:00"
+        },
+        {
+            "name": "voku/portable-utf8",
+            "version": "5.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/portable-utf8.git",
+                "reference": "06c601173db9be0d02c56d308b3618ef5d07fd89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/06c601173db9be0d02c56d308b3618ef5d07fd89",
+                "reference": "06c601173db9be0d02c56d308b3618ef5d07fd89",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "symfony/polyfill-iconv": "~1.0",
+                "symfony/polyfill-intl-grapheme": "~1.0",
+                "symfony/polyfill-intl-normalizer": "~1.0",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php72": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "suggest": {
+                "ext-iconv": "Use iconv for best performance",
+                "ext-intl": "Use Intl for best performance",
+                "ext-mbstring": "Use Mbstring for best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "voku\\": "src/voku/"
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Hamid Sarfraz",
+                    "homepage": "http://pageconfig.com/"
+                },
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Portable UTF-8 library with polyfill / shim for Iconv, Intl, Mbstring, Normalizrer etc.",
+            "homepage": "https://github.com/voku/portable-utf8",
+            "keywords": [
+                "UTF",
+                "clean",
+                "php",
+                "unicode",
+                "utf-8",
+                "utf8"
+            ],
+            "time": "2018-01-07T08:30:30+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

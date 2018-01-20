@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {"Monitoring\\": "src/"}
+    },
+    "require": {
+        "hoa/socket": "1.17.05.16",
+        "influxdb/influxdb-php": "^1.14",
+        "voku/arrayy": "^5.0",
+        "vlucas/phpdotenv": "^2.4"
+    }
+}
